@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Pendaftaran</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<form action="proses.php" method="post" enctype="multipart/form-data">
+	<h2><i class="fa fa-user"></i>FORM PENDAFTARAN</h2>
+	<div class="form-group">
+	<h4>Kami ada sesuai kebutuhan anda</h4>
+	</div>
+	<br/>
+	<div class="form-group">
+	<input type="text" class="input-mode" placeholder="Nama Depan" name="nama_dpn">
+	</div>
+	<div class="form-group">
+	<input type="text" class="input-mode" placeholder="Nama Belakang" name="nama_blk">
+	</div>
+	<div class="form-group">
+	<input type="email" class="input-mode" placeholder="Email" name="email" >	
+	</div>
+	<br/>
+	<div class="form-group">
+	<strong>Jenis Kelamin :</strong> 
+	<br/>
+	<label class="container1">
+	<input type="radio" name="jenis_kelamin" value="laki-laki" /> 
+	Pria
+	<span class="checkmark1"></span>
+	<br/>
+	</label>
+	<label class="container1">
+	<input type="radio" name="jenis_kelamin" value="perempuan" /> 
+	Wanita
+	<span class="checkmark1"></span>
+	</div>
+	<br/>
+	<div class="form-group">
+	<strong>Asal Kota :</strong> 
+	<br/>
+ 	<select name="asal_kota" >
+    <option value="Kota Jakarta"> Jakarta</option>
+    <option>Bandung</option>
+    <option value="Kota Semarang" selected>Semarang</option>
+ 	</select>
+ 	</div>
+	<br/>
+	<div class="form-group">
+	<strong>Pilihan Jenis Membership : </strong> 
+	<br/>
+	<label class="container">
+	<input type="checkbox" name="jenis_mmbr" value="Free"> Free<br>
+	<span class="checkmark"></span> </label>
+	<label class="container">
+  	<input type="checkbox" name="jenis_mmbr" value="Premium"> Premium<br>
+  	<span class="checkmark"></span> </label>
+  	<label class="container">
+  	<input type="checkbox" name="jenis_mmbr" value="Exclusive"> Exclusive<br>
+  	<span class="checkmark"></span> </label>
+	</div>
+	<br />
+	<div class="form-group">
+	<strong>Keterangan : </strong> 
+	<br />
+	<textarea id="komentar" name="komentar" rows="5" cols="64" placeholder="Masukkan keterangan tambahan jika dibutuhkan">
+	</textarea>
+	</div>
+	<br />
+	<div class="form-group">
+  	<strong>Upload Foto:</strong>  
+  	<br />
+  	<input type="file" name="img" multiple>
+	<br />
+	<div class="form-group">
+	<button class="btn btn-submit">Daftar &nbsp; <i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
+	</div>
+	<br />
+	</form>
+	</body>
+</html>
